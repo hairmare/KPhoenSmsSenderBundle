@@ -1,6 +1,6 @@
 <?php
 
-namespace KPhoen\SmsSenderBUndle\DependencyInjection\Factory;
+namespace KPhoen\SmsSenderBundle\DependencyInjection\Factory;
 
 use Symfony\Component\Config\Definition\Builder\NodeDefinition;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
