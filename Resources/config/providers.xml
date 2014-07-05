@@ -50,7 +50,7 @@
             <argument></argument>
         </service>
 
-        <service id="sms.provider.swsscom" class="SmsSender\Provider\SwisscomProvider" public="false">
+        <service id="sms.provider.swisscom" class="SmsSender\Provider\SwisscomProvider" public="false">
             <argument type="service" id="sms.http_adapter" />
             <!-- api-key -->
             <argument></argument>
