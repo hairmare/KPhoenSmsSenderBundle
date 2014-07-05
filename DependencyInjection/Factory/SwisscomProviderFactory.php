@@ -39,7 +39,7 @@ class SwisscomProviderFactory implements ProviderFactoryInterface
         $node
             ->children()
                 ->scalarNode('api_key')->isRequired()->end()
-                ->sdcalarNode('international_prefix')->defaultValue('+41')->end()
+                ->scalarNode('international_prefix')->defaultValue('+41')->end()
             ->end()
         ;
     }
