@@ -18,8 +18,8 @@ class SwisscomProviderFactory implements ProviderFactoryInterface
     public function create(ContainerBuilder $container, $id, array $config)
     {
         $container->getDefinition($id)
-            ->replaceArguments(1, $config['api_key'])
-            ->replaceArguments(2, $config['international_prefix'])
+            ->replaceArgument(1, $config['api_key'])
+            ->replaceArgument(2, $config['international_prefix'])
         ;
     }
 
