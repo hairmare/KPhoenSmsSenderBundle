@@ -6,9 +6,9 @@ use Symfony\Component\Config\Definition\Builder\NodeDefinition;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
 /**
- * swisscom provider factory
+ * Swisscom provider factory
  *
- * @author Lucas Bickel <hairmare@purplehaze.ch>
+ * @author Kévin Gomez <contact@kevingomez.fr>
  */
 class SwisscomProviderFactory implements ProviderFactoryInterface
 {
@@ -18,13 +18,13 @@ class SwisscomProviderFactory implements ProviderFactoryInterface
     public function create(ContainerBuilder $container, $id, array $config)
     {
         $container->getDefinition($id)
-            ->replaceArgument(1, $config['api_key'])
+            ->replaceArgument(1, $config['client_id'])
             ->replaceArgument(2, $config['international_prefix'])
         ;
     }
 
     /**
-     * {@inheriDoc}
+     * {@inheritDoc}
      */
     public function getKey()
     {
@@ -38,7 +38,7 @@ class SwisscomProviderFactory implements ProviderFactoryInterface
     {
         $node
             ->children()
-                ->scalarNode('api_key')->isRequired()->end()
+                ->scalarNode('client_id')->isRequired()->end()
                 ->scalarNode('international_prefix')->defaultValue('+41')->end()
             ->end()
         ;

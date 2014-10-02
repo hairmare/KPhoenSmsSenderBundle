@@ -24,7 +24,7 @@
             <tag name="sms.provider.factory" />
         </service>
 
-        <service id="sms.provider.factory.wssscom" class="KPhoen\SmsSenderBundle\DependencyInjection\Factory\SwisscomProviderFactory">
+        <service id="sms.provider.factory.swisscom" class="KPhoen\SmsSenderBundle\DependencyInjection\Factory\SwisscomProviderFactory">
             <tag name="sms.provider.factory" />
         </service>
 

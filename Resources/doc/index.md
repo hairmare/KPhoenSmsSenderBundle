@@ -126,5 +126,6 @@ k_phoen_sms_sender:
         password:     lala
 
     swisscom:
-        api_key:      lala
+        client_id:              lala
+        international_prefix:   '+41'
 ```
